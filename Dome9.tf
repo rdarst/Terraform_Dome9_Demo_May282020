@@ -203,10 +203,10 @@ resource "dome9_iplist" "iplist_1" {
         ip = "10.2.0.0/16"
         comment = "Net 10 dot 2"
           }
-  //items  {
-    //    ip = "10.3.0.0/16"
-      //  comment = "Net 10 dot 3"
-        //  }
+  items  {
+        ip = "10.3.0.0/16"
+        comment = "Net 10 dot 3"
+          }
   items  {
         ip = "192.168.1.3/32"
         comment = "My IP"
