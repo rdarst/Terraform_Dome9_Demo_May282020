@@ -204,12 +204,12 @@ resource "dome9_iplist" "iplist_1" {
         comment = "Net 10 dot 2"
           }
   items  {
-        ip = "10.3.0.0/16"
-        comment = "Net 10 dot 3"
+        ip = "10.4.0.0/16"
+        comment = "Net 10 dot 4"
           }
   items  {
         ip = "192.168.1.3/32"
-        comment = "My IP"
+        comment = "My IP 192"
           }
 }
 
