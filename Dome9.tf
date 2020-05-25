@@ -123,11 +123,11 @@ resource "dome9_cloudaccount_aws" "AWS_CPX2020" {
     }
     regions {
       new_group_behavior = "ReadOnly"
-      region             = "me_south_1"
+      region             = "ap_east_1"
     } 
     regions {
       new_group_behavior = "ReadOnly"
-      region             = "ap_east_1"
+      region             = "me_south_1"
     } 
   }
 }
