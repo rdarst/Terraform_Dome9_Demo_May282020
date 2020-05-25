@@ -196,6 +196,25 @@ resource "dome9_ruleset" "newruleset" {
   }
 }
 
+resource "dome9_ruleset" "newruleset1" {
+  name        = "Terraform_CPX2020_AWS_ELB_8090"
+  description = "Demo CPX Rule for AWS"
+  cloud_vendor = "aws"
+  language = "en"
+  hide_in_compliance = false
+  is_template = false
+  rules {
+    name = "CPX2020 AWS ELB 8090 Rule"
+    logic = "ApplicationLoadBalancer where isPublic=true and inboundRules contain [port <= 8090 and portTo >= 8090 and protocol in ('TCP','ALL')] should not have inboundRules contain [port <= 8090 and portTo >= 8090 and protocol in ('TCP','ALL') and scope isPublic() and scope='0.0.0.0/0']"
+    severity = "High"
+    description = "Services and databases store data that may be sensitive, protected by law, subject to regulatory requirements or compliance standards. It is highly recommended that access to data will be restricted to encrypted protocols. This rule detects network settings that may expose data via unencrypted protocol over the public internet or to a too wide local scope."
+    compliance_tag = "Network Ports Security"
+    priority = "high"
+    is_default = false
+    remediation = "Limit the access scope for ApplicationLoadBalancer with service 'Known internal web port to only allow access in internal networks and limited scope."
+  }
+}
+
 resource "dome9_iplist" "iplist_1" {
   name        = "CPX2020_Example_List_1"
   description = "List Example #1"
