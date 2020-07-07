@@ -1,6 +1,6 @@
 # Terraform_Dome9_Demo
 
-Demo Terraform template to onboard AWS/Azure accounts and subscriptions
+Demo Terraform template to onboard AWS/Azure accounts and subscriptions.
 
 Adds Dome9 Rules and IP lists.
 
