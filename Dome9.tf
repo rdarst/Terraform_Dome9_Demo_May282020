@@ -178,10 +178,9 @@ resource "dome9_continuous_compliance_notification" "Ryan_ProjectSasquatch" {
 }
 
 resource "dome9_continuous_compliance_policy" "Azure_CPX2020_Policy" {
-  cloud_account_id    = dome9_cloudaccount_azure.VisualStudio.id
-  external_account_id = dome9_cloudaccount_azure.VisualStudio.id
-  bundle_id           = dome9_ruleset.newruleset.id
-  cloud_account_type  = "Azure"
+  target_id    = dome9_cloudaccount_azure.VisualStudio.id
+  ruleset_id           = dome9_ruleset.newruleset.id
+  target_type  = "Azure"
   notification_ids    = [dome9_continuous_compliance_notification.Ryan_ProjectBigfoot.id]
 }
 
