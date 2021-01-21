@@ -242,7 +242,7 @@ resource "dome9_iplist" "iplist_1" {
         comment = "Net 10 dot 10"
           }
   items  {
-        ip = "192.168.1.3/32"
+        ip = "192.168.1.4/32"
         comment = "My IP 192"
           }
 }
