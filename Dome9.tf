@@ -238,8 +238,8 @@ resource "dome9_iplist" "iplist_1" {
         comment = "Net 10 dot 2"
           }
   items  {
-        ip = "10.11.0.0/16"
-        comment = "Net 10 dot 11"
+        ip = "10.10.0.0/16"
+        comment = "Net 10 dot 10"
           }
   items  {
         ip = "192.168.1.4/32"
